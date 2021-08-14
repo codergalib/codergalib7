@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Recursive', sans-serif;
+}
+
+/* COUSTOM ALL TIME CSS */
+body a{
+    text-decoration: none;
+}
+.clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.container{
+    width: 1180px;
+    margin: auto;
+}
+/* HEADER TOP SECTION CSS */
+#headerTop {
+	background-color: #9e00ff;
+	height: 56px;
+	padding-top: 7px;
+}
+#headerTop .headerTopText{
+    width: 50%;
+}
+#headerTop .headerTopText span {
+	font-size: 19px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 46px;
+}
+#headerTop .headerTopIcon {
+    width: 50%;
+}
+#headerTop .headerTopIcon ul{
+    list-style: none;
+    text-align: right;
+}
+#headerTop .headerTopIcon ul li{
+    display: inline-block;
+}
+#headerTop .headerTopIcon ul li a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: #e83a3b;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px 30px 10px 30px;
+    transition: .4s;
+}
+#headerTop .headerTopIcon ul li a:hover{
+    background: #ff00dc ;
+}
+
+/* BANNER SECTION STYLE */
+#banner{
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/banner.jpg)no-repeat top center;
+    background-size: cover;
+    padding: 150px 0;
+}
+#banner .WelcomeText{}
+#banner .otherText{}
+#banner .otherText p {
+	font-size: 26px;
+	color: #fff;
+	font-weight: 800;
+    animation: otherTextAnimation 1s linear infinite alternate;
+}
+@keyframes otherTextAnimation{
+    0%{
+        color: #ff00dc;
+    }
+    100%{
+        color: #e83a3b;
+    }
+}
+#banner .WelcomeText ul{
+    list-style: none;
+}
+#banner .WelcomeText ul li{
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: welcomeTextAnimated 4s ease-in-out infinite;
+    color: #e83a3b;
+}
+@keyframes welcomeTextAnimated{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    50%{
+        color: #e83a3b;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        color: #ff00dc;
+    }
+}
+#banner .WelcomeText ul li:nth-child(1){
+    animation-delay: 2.3s;
+}
+#banner .WelcomeText ul li:nth-child(2){
+    animation-delay: 2.5s;
+}
+#banner .WelcomeText ul li:nth-child(3){
+    animation-delay: 2.8s;
+}
+#banner .WelcomeText ul li:nth-child(4){
+    animation-delay: 3.1s;
+}
+#banner .WelcomeText ul li:nth-child(5){
+    animation-delay: 3.4s;
+}
+#banner .WelcomeText ul li:nth-child(6){
+    animation-delay: 3.7s;
+}
+#banner .WelcomeText ul li:nth-child(7){
+    animation-delay: 4s;
+}
+
+   /* CATAGORIES SECTION STYLE */
+
+#catagories{
+    padding: 100px 0;
+    background:  #990084;
+}
+.catagoriesHeader h1{
+    text-align: center;
+    color: #e83a3b;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.catagoriesItem{}
+.catagoriesItem ul{}
+.catagoriesItem ul li{}
+.catagoriesItem ul li a{
+    color:  #fff;
+}
+
+.itemSingel .itemImage img{
+         border-top-left-radius: 50px;
+         border-top-right-radius: 50px;
+}
+.itemSingel .itemInfo{}
